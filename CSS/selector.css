@@ -1,0 +1,39 @@
+/* CSS 中 id 选择器以 "#" 来定义。 */
+#box {
+  width: 200px;
+  height: 200px;
+  border: 3px solid blue;
+}
+
+/* 类选择器以一个点"."号显示。 */
+.btn {
+  width: 100px;
+  height: 50px;
+  border: 1px solid red;
+}
+
+/* 标签选择器 */
+div {
+  cursor: pointer;
+}
+
+/* 通用选择器 */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 子选择器。 >作用于元素的第一代后代 */
+#pBox > p {
+  font-size: 20px;
+}
+
+/* 后代选择器。空格作用于元素的所有后代。 */
+#pBox div {
+  font-size: 30px;
+}
+
+/* 并集选择器 */
+h2, h3, h4 {
+  color: orange;
+}
