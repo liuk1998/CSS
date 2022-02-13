@@ -1,0 +1,45 @@
+<!--
+ * @Author: your name
+ * @Date: 2022-02-13 19:40:21
+ * @LastEditTime: 2022-02-13 19:55:29
+ * @LastEditors: Please set LastEditors
+ * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @FilePath: /CSS/HTML/background.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS基础 - 背景</title>
+  <style>
+    /* background-color: 背景颜色。*/
+    #one {
+      background-color: aquamarine;
+      width: 200px;
+      height: 200px;
+    }
+    /*
+      background-image: 背景图像。
+      background-size: 指定背景图像的大小。值: cover为完全覆盖。 contain为自适应。
+      background-repeat: 是否及如何重复背景图像。
+      background-position: 设置背景图像的起始位置。值: x表示水平位置,y表示垂直位置。
+     */
+    #two {
+      background-image: url('/image/WechatIMG3.jpeg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: left bottom;
+      width: 200px;
+      height: 200px;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="one"></div>
+  <div id="two"></div>
+
+</body>
+</html>
