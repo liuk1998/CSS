@@ -1,0 +1,45 @@
+<!--
+ * @Author: your name
+ * @Date: 2022-02-14 14:24:41
+ * @LastEditTime: 2022-02-14 14:53:40
+ * @LastEditors: Please set LastEditors
+ * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @FilePath: /CSS/HTML/float.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS基础 - 浮动</title>
+  <style>
+    #box {
+      width: 100px;
+      height: 100px;
+      border: 2px solid black;
+      /*
+        overflow 属性, 用于控制内容溢出元素框时显示的方式。值: hidden为超出部分隐藏。auto与scroll为超出部分会显示滚动条查看其余的内容。
+      */
+      overflow: auto;
+    }
+    .area {
+      width: 50%;
+      height: 50px;
+      background-color: lightcoral;
+      /* float: 浮动。一个浮动元素会尽量向左或向右移动，直到它的外边缘碰到包含框或另一个浮动框的边框为止。 */
+      float: left;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="box">
+    <div class="area">你好</div>
+    <div class="area">你好</div>
+    <div class="area">你好</div>
+    <div class="area">你好</div>
+  </div>
+
+</body>
+</html>

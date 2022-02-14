@@ -1,0 +1,56 @@
+<!--
+ * @Author: your name
+ * @Date: 2022-02-14 10:42:40
+ * @LastEditTime: 2022-02-14 16:27:29
+ * @LastEditors: Please set LastEditors
+ * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @FilePath: /CSS/HTML/link.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS基础 - 链接与列表</title>
+  <style>
+    /*
+      链接状态:
+      a:link 伪类 为未访问过的链接。
+      a:visited 伪类 为已访问过的链接。
+      a:hover 伪类 为鼠标放在链接上时。必须跟在 a:link 和 a:visited后面。
+      a:active 伪类 为鼠标点击的那一瞬间。必须跟在 a:hover后面。
+    */
+    a:link {
+      color: purple;
+      text-decoration: none;
+    }
+    a:visited {
+      color: blue;
+      text-decoration: line-through;
+    }
+    a:hover {
+      color: red;
+      text-decoration: underline;
+    }
+    a:active {
+      color: green;
+    }
+    /*
+      list-style: 列表项标记。值: circle为空心圆。square为实心方框。upper-roman为罗马排序。lower-alpha为字母排序。
+    */
+    ul {
+      list-style: lower-alpha;
+    }
+  </style>
+</head>
+<body>
+  <a href="" target="_blank">链接</a>
+
+  <ul>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</body>
+</html>

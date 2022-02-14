@@ -1,0 +1,70 @@
+<!--
+ * @Author: your name
+ * @Date: 2022-02-14 13:35:08
+ * @LastEditTime: 2022-02-14 13:59:57
+ * @LastEditors: Please set LastEditors
+ * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @FilePath: /CSS/HTML/margin.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS基础 - 边框、外边距与内边距</title>
+  <style>
+    #border {
+      width: 200px;
+      height: 200px;
+      /*
+        border: 宽度 线的样式 颜色。solid为实线，dotted为点线，dashed为虚线，double为两个边框，groove为3D沟槽边框，ridge为3D脊边框，inset为3D的嵌入边框，outset为3D突出边框。
+      */
+      border: 5px outset green;
+    }
+
+    #box {
+      width: 150px;
+      height: 150px;
+      /*
+        margin: 外边距。 margin: 0 auto为横向居中。
+        margin-top:100px; 外边距(顶部)
+        margin-bottom:100px; 外边距(底部)
+        margin-right:50px; 外边距(右部)
+        margin-left:50px; 外边距(左部)
+        margin属性可以有一到四个值。1.上 下 左 右。2.上 左右 下。3.上下 左右。4.四周。
+      */
+      margin: 0 auto;
+      background-color: indianred;
+      /*
+        padding: 内边距。
+        padding-top:25px; 内边距(顶部)
+        padding-bottom:25px; 内边距(底部)
+        padding-right:50px; 内边距(右部)
+        padding-left:50px; 内边距(左部)
+        padding属性可以有一到四个值。1.上 下 左 右。2.上 左右 下。3.上下 左右。4.四周。
+      */
+      padding: 30px;
+    }
+
+    #area {
+      width: 100px;
+      height: 100px;
+      background-color: lightblue;
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="border"></div>
+
+  <div id="box">
+    <div id="area"></div>
+  </div>
+
+</body>
+
+</html>
