@@ -1,0 +1,49 @@
+<!--
+ * @Author: your name
+ * @Date: 2022-02-15 17:28:59
+ * @LastEditTime: 2022-02-15 18:03:24
+ * @LastEditors: Please set LastEditors
+ * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @FilePath: /CSS/HTML/column.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS3基础 - 盒模型</title>
+  <style>
+    #box {
+      width: 200px;
+      height: 300px;
+      border: 3px groove lightsalmon;
+    }
+    #smell {
+      width: 100%;
+      height: 80px;
+      background-image: linear-gradient(pink,purple);
+      /*
+        box-sizing: 盒模型。
+        值: content-box是默认值, 宽度和高度的计算值都不包含内容的边框（border）和内边距（padding）。会超出父标签。
+            border-box width 和 height 属性包括内容，内边距和边框，但不包括外边距。会限制在父标签内。
+      */
+      box-sizing: content-box;
+      padding: 10px;
+    }
+    #big {
+      width: 100%;
+      height: 80px;
+      background-image: linear-gradient(green,blue);
+      box-sizing: border-box;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div id="box">
+    <div id="smell"></div>
+    <div id="big"></div>
+  </div>
+</body>
+</html>

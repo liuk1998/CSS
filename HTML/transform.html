@@ -1,0 +1,42 @@
+<!--
+ * @Author: your name
+ * @Date: 2022-02-15 14:30:52
+ * @LastEditTime: 2022-02-15 16:56:51
+ * @LastEditors: Please set LastEditors
+ * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @FilePath: /CSS/HTML/transform.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS3基础 - 变换</title>
+  <style>
+    #box {
+      width: 150px;
+      height: 150px;
+      background-image: linear-gradient(blue,red);
+      /*
+        rotate()方法，在一个给定度数顺时针旋转的元素。负值是允许的，这样是元素逆时针旋转。2D
+        rotateX()方法，围绕其在一个给定度数X轴旋转的元素。3D
+        rotateY()方法，围绕其在一个给定度数Y轴旋转的元素。3D
+      */
+      /* skew() 方法，两个参数值，分别表示X轴和Y轴倾斜的角度，如果第二个参数为空，则默认为0，参数为负表示向相反方向倾斜。2D */
+      transform: rotate(30deg) skew(30deg,20deg);
+
+    }
+    #box:hover {
+      /* translate()方法，根据左(X轴)和顶部(Y轴)位置给定的参数，从当前元素位置移动。2D */
+      /* scale()方法，该元素缩放的大小，取决于宽度（X轴）和高度（Y轴）的参数 2D */
+      transform: translate(50px, 200px) scale(2,1);;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="box"></div>
+
+</body>
+</html>

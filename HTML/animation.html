@@ -1,0 +1,53 @@
+<!--
+ * @Author: your name
+ * @Date: 2022-02-15 17:17:45
+ * @LastEditTime: 2022-02-15 17:26:26
+ * @LastEditors: Please set LastEditors
+ * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @FilePath: /CSS/HTML/animation.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS3基础 - 动画</title>
+  <style>
+    /* 动画是使元素从一种样式逐渐变化为另一种样式的效果。请用百分比来规定变化发生的时间，或用关键词 "from" 和 "to"，等同于 0% 和 100%。 */
+    @keyframes myFirst {
+      from {
+        background-color: red;
+      }
+      to {
+        background-color: blue;
+      }
+    }
+    /* @keyframes	规定动画。 */
+    @keyframes mySecond {
+      0% {
+        color: black;
+      }
+      25% {
+        color: blue;
+      }
+      50% {
+        color: cadetblue;
+      }
+      100% {
+        color: purple;
+      }
+    }
+    div {
+      width: 200px;
+      height: 200px;
+      /* animation	所有动画属性的简写属性。 */
+      animation: myFirst 5s;
+      animation: mySecond 5s;
+    }
+  </style>
+</head>
+<body>
+  <div>动画效果</div>
+</body>
+</html>
