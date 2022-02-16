@@ -1,0 +1,115 @@
+<!--
+ * @Author: your name
+ * @Date: 2022-02-16 10:20:25
+ * @LastEditTime: 2022-02-16 13:49:04
+ * @LastEditors: Please set LastEditors
+ * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @FilePath: /CSS/HTML/flex.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS3基础 - 弹性盒子</title>
+  <style>
+    #box {
+      /* display: flex; 弹性容器。 */
+      display: flex;
+      /*
+        flex-direction 属性指定了弹性容器中子元素的排列方式。
+        row - 横向从左到右排列（左对齐），默认的排列方式。
+        row-reverse - 反转横向排列（右对齐)，从后往前排，最后一项排在最前面。
+        column - 纵向排列。
+        column-reverse - 反转纵向排列，从后往前排，最后一项排在最上面。
+      */
+      flex-direction: row-reverse;
+      /*
+        justify-content属性，内容对齐(横轴)。
+        flex-start - 向行头紧挨着填充。默认。
+        flex-end - 向行尾紧挨着填充。
+        center - 居中紧挨着填充。
+        space-between - 平均分布在该行上。
+        space-around - 平均分布在该行上，两边留有一半的间隔空间。
+      */
+      justify-content: center;
+      /*
+        align-items属性，对齐方式(纵轴)。
+        flex-start - 从上开始。
+        flex-end - 从下开始。
+        center - 居中。
+      */
+      align-items: center;
+      /*
+        flex-wrap属性，设置弹性盒子的子元素超出父容器时是否换行及换行方式。
+        nowrap - 默认，弹性容器为单行。该情况下弹性子项可能会溢出容器。
+        wrap - 弹性容器为多行。该情况下弹性子项溢出的部分会被放置到新行，子项内部会发生断行。
+        wrap-reverse - 反转 wrap 排列。
+      */
+      flex-wrap: wrap;
+      /*
+        align-content属性，设置各个行的对齐。
+        stretch - 默认。各行将会伸展以占用剩余的空间。
+        flex-start - 各行向弹性盒容器的起始位置堆叠。
+        flex-end - 各行向弹性盒容器的结束位置堆叠。
+        center -各行向弹性盒容器的中间位置堆叠。
+        space-between -各行在弹性盒容器中平均分布。
+        space-around - 各行在弹性盒容器中平均分布，两端保留子元素与子元素之间间距大小的一半。
+      */
+      align-content: center;
+      width: 300px;
+      height: 300px;
+      border: 4px inset orangered;
+    }
+    .block {
+      width: 100px;
+      height: 50px;
+      border: 2px inset orangered;
+    }
+
+    #box2 {
+      display: flex;
+      width: 300px;
+      height: 300px;
+      border: 4px inset green;
+    }
+    .block2 {
+      border: 2px inset lightblue;
+      /* 弹性子元素属性 */
+      /*
+        align-self属性，设置弹性元素自身在侧轴（纵轴）方向上的对齐方式。
+        flex-start - 从上开始。
+        flex-end - 从下开始。
+        center - 居中。
+      */
+      align-self: center;
+      /* 前四个弹性子元素占用了 1/6 的空间，最后一个各占 2/6 的空间: */
+      flex: 1;
+    }
+    .block3 {
+      border: 2px inset lightblue;
+      /* 前四个弹性子元素占用了 1/6 的空间，最后一个各占 2/6 的空间: */
+      flex: 2;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="box">
+    <div class="block">1</div>
+    <div class="block">2</div>
+    <div class="block">3</div>
+    <div class="block">4</div>
+  </div>
+
+  <div id="box2">
+    <div class="block2">1</div>
+    <div class="block2">2</div>
+    <div class="block2">3</div>
+    <div class="block2">4</div>
+    <div class="block3">5</div>
+  </div>
+
+</body>
+</html>

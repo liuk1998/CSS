@@ -1,0 +1,43 @@
+<!--
+ * @Author: your name
+ * @Date: 2022-02-16 13:56:52
+ * @LastEditTime: 2022-02-16 14:19:04
+ * @LastEditors: Please set LastEditors
+ * @Description: 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+ * @FilePath: /CSS/HTML/media.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS3基础 - 多媒体</title>
+  <style>
+    /* 多媒体类型：all-用于所有多媒体类型设备。print-用于打印机。screen-用于电脑屏幕，平板，智能手机等。speech-用于屏幕阅读器 */
+    /* 在屏幕可视窗口尺寸0 < && < 500 像素时 */
+    @media screen and (max-width: 500px) and (min-width: 0px) {
+      div {
+        width: 200px;
+        height: 200px;
+        background-image: linear-gradient(black, white);
+      }
+    }
+    /* 在屏幕可视窗口尺寸500 < && < 1000 像素时 */
+    @media screen and (max-width: 1000px) and (min-width: 500px) {
+      div {
+        width: 500px;
+        height: 500px;
+        background-image: linear-gradient(red, blue);
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <div></div>
+</body>
+
+</html>
