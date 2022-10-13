@@ -17,6 +17,10 @@
       background-size: 指定背景图像的大小。值: cover为完全覆盖。 contain为自适应。
       background-repeat: 是否及如何重复背景图像。
       background-position: 设置背景图像的起始位置。值: x表示水平位置,y表示垂直位置。
+      background-attachment: 指明背景图的位置是固定于视口的，还是随着包含块移动的。
+                             值: scroll为默认, 背景图相对于元素固定，背景随页面滚动而移动，即背景和内容绑定。
+                                fixed为背景图相对于视口固定,所以随页面滚动背景不动,相当于背景被设置在了body上。
+                                local为背景图相对于元素内容固定。
      */
     #two {
       background-image: url('/image/WechatIMG3.jpeg');
